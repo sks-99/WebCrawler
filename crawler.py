@@ -4,11 +4,29 @@ from bs4 import BeautifulSoup
 
 # number of web pages saved
 MAX_DOCUMENTS = 10
+# minimum number of words
+WORDS_MINIMUM = 200
 
 search_terms = ["facebook", "tiktok", "twitter"]
 page_delimiter = "&start={}"
 
 header = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"}
+
+# check word count on articles by counting words surrounded by paragraph tags
+def word_count(url):
+    request = urllib.request.Request(url, headers=header)
+    page = urllib.request.urlopen(request)
+    # lxml - html/ xml processor
+    soup = BeautifulSoup(page, "lxml")
+
+    # word count
+    words_count = 0
+
+    # find the <p> tags
+    for info in soup.find_all("p"):
+        words_count += len(info.get_text().split())
+    
+    return words_count
 
 # regular google search results, but gives results such as youtube, etc
 def google_search():
@@ -81,6 +99,13 @@ def google_news_search():
                     url = info.parent.parent.parent["href"]
                     print("header " + info.text)
                     print("url " + url)
+                    # check word count, if under, skip website
+                    words = word_count(url)
+                    print("word count " + str(words))
+                    if (words < WORDS_MINIMUM):
+                        print("word count < " + str(WORDS_MINIMUM) + " skipping...")
+                        print()
+                        continue
                     print()
                     results += 1
                     # use try/catch since some websites may 403
