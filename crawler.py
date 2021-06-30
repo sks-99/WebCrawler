@@ -16,16 +16,24 @@ header = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 # check word count on articles by counting words surrounded by paragraph tags
 def word_count(url):
     request = urllib.request.Request(url, headers=header)
-    page = urllib.request.urlopen(request)
-    # lxml - html/ xml processor
-    soup = BeautifulSoup(page, "lxml")
 
-    # word count
-    words_count = 0
+    # may crash if website returns error
+    try:
+        page = urllib.request.urlopen(request)
+    
+        # lxml - html/ xml processor
+        soup = BeautifulSoup(page, "lxml")
 
-    # find the <p> tags
-    for info in soup.find_all("p"):
-        words_count += len(info.get_text().split())
+        # word count
+        words_count = 0
+
+        # find the <p> tags
+        for info in soup.find_all("p"):
+            words_count += len(info.get_text().split())
+        
+    except:
+        print("Error with webpage!")
+        return 0
     
     return words_count
 
