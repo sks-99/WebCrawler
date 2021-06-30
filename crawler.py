@@ -1,5 +1,6 @@
 import urllib.request
 import os
+import time
 from bs4 import BeautifulSoup
 
 # number of web pages saved
@@ -35,7 +36,7 @@ def google_search():
         current_page = 1
 
         # make directory for search results
-        directory = os.getcwd() + "\\Dataset\\" + term.replace(" ", "_")
+        directory = os.path.join(os.getcwd(), "Dataset", term.replace(" ", "_"))
         os.mkdir(directory)
 
         # keep going through google results until we have correct number of documents
@@ -58,7 +59,7 @@ def google_search():
                     try:
                         # save to file
                         search_result = urllib.request.urlopen(url)
-                        fp = open("{}\\article{}.html".format(directory, results), "wb")
+                        fp = open(os.path.join(directory, "articles{}.html".format(results)), "wb")
                         fp.write(search_result.read())
                         fp.close()
                     except:
@@ -82,9 +83,9 @@ def google_news_search():
         current_page = 1
 
         # make directory for search results
-        directory = os.getcwd() + "\\Dataset\\" + term.replace(" ", "_")
+        directory = os.path.join(os.getcwd(), "Dataset", term.replace(" ", "_"))
         os.mkdir(directory)
-
+        
         # keep going through google news results until we have correct number of documents
         while results < MAX_DOCUMENTS:
             url = "https://www.google.com/search?q=" + term.replace(" ", "+") + page_delimiter.format(current_page * 10) + "&tbm=nws"
@@ -112,7 +113,7 @@ def google_news_search():
                     try:
                         # save to file
                         search_result = urllib.request.urlopen(url)
-                        fp = open("{}\\article{}.html".format(directory, results), "wb")
+                        fp = open(os.path.join(directory, "articles{}.html".format(results)), "wb")
                         fp.write(search_result.read())
                         fp.close()
                     except:
@@ -128,7 +129,11 @@ def google_news_search():
             current_page += 1
 
 def main():
+    # timer
+    start = time.time()
     # google_search()
     google_news_search()
+    end = time.time()
+    print("Elapsed time: {:.2f} seconds".format(end - start))
 
 main()
