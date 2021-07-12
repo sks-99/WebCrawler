@@ -87,7 +87,8 @@ def google_search(term):
                 # use try/catch since some websites may 403
                 try:
                     # save to file
-                    search_result = urllib.request.urlopen(url)
+                    request = urllib.request.Request(url, headers=header)
+                    search_result = urllib.request.urlopen(request)
                     fp = open(os.path.join(directory, "articles{}.html".format(results)), "wb")
                     fp.write(search_result.read())
                     fp.close()
@@ -138,7 +139,8 @@ def google_news_search(term):
                 # use try/catch since some websites may 403
                 try:
                     # save to file
-                    search_result = urllib.request.urlopen(url)
+                    request = urllib.request.Request(url, headers=header)
+                    search_result = urllib.request.urlopen(request)
                     fp = open(os.path.join(directory, "articles{}.html".format(results)), "wb")
                     fp.write(search_result.read())
                     fp.close()
