@@ -5,11 +5,11 @@ import threading
 from bs4 import BeautifulSoup
 
 # number of web pages saved
-MAX_DOCUMENTS = 10
+MAX_DOCUMENTS = 20
 # minimum number of words
 WORDS_MINIMUM = 200
 
-search_terms = ["facebook", "tiktok", "twitter"]
+search_terms = ["Delta", "Air Canada", "WestJet", "Swoop"]
 page_delimiter = "&start={}"
 
 # user agent string

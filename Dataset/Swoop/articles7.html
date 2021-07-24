@@ -1,0 +1,322 @@
+<!DOCTYPE HTML><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><head><meta charset="UTF-8" /><link rel="profile" href="https://gmpg.org/xfn/11" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link type="text/css" media="all" href="http://www.thehardtackle.com/wp-content/cache/autoptimize/css/autoptimize_0aea1231dd032865325f4fa6794d9dc5.css" rel="stylesheet" /><title>Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop</title><meta name="description" content="Liverpool and Leeds United are among the clubs monitoring the situation of Chelsea whizkid Lewis Bate, whose contract expires next year." /><meta name="keywords" content="Bate, Chelsea, Liverpool, Leeds United" /><link rel="Shortcut Icon" href="http://www.thehardtackle.com/wp-content/themes/dynamik/css/images/favicon.ico" type="image/x-icon" /><link rel="alternate" type="application/rss+xml" title="TheHardTackle.com &raquo; Feed" href="http://www.thehardtackle.com/feed/" /><link rel="alternate" type="application/rss+xml" title="TheHardTackle.com &raquo; Comments Feed" href="http://www.thehardtackle.com/comments/feed/" /><link rel="alternate" type="application/rss+xml" title="TheHardTackle.com &raquo; Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop Comments Feed" href="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/feed/" /> <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"wpemoji":"http:\/\/www.thehardtackle.com\/wp-includes\/js\/wp-emoji.js?ver=4.4.25","twemoji":"http:\/\/www.thehardtackle.com\/wp-includes\/js\/twemoji.js?ver=4.4.25"}};
+			( function( window, document, settings ) {
+	var src, ready;
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "simple" or "flag" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var canvas = document.createElement( 'canvas' ),
+			context = canvas.getContext && canvas.getContext( '2d' ),
+			stringFromCharCode = String.fromCharCode,
+			tonedata, tone, tone2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		if ( 'flag' === type ) {
+			/*
+			 * This works because the image will be one of three things:
+			 * - Two empty squares, if the browser doesn't render emoji
+			 * - Two squares with 'A' and 'U' in them, if the browser doesn't render flag emoji
+			 * - The Australian flag
+			 *
+			 * The first two will encode to small images (1-2KB data URLs), the third will encode
+			 * to a larger image (4-5KB data URL).
+			 */
+			context.fillText( stringFromCharCode( 55356, 56806, 55356, 56826 ), 0, 0 );
+			return canvas.toDataURL().length > 3000;
+		} else if ( 'diversity' === type ) {
+			/*
+			 * This tests if the browser supports the Emoji Diversity specification, by rendering an
+			 * emoji with no skin tone specified (in this case, Santa). It then adds a skin tone, and
+			 * compares if the emoji rendering has changed.
+			 */
+			context.fillText( stringFromCharCode( 55356, 57221 ), 0, 0 );
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+
+			context.fillText( stringFromCharCode( 55356, 57221, 55356, 57343 ), 0, 0 );
+			// Chrome has issues comparing arrays, and Safari has issues converting arrays to strings.
+			// So, we create our own string and compare that, instead.
+			tonedata = context.getImageData( 16, 16, 1, 1 ).data;
+			tone2 = tonedata[0] + ',' + tonedata[1] + ',' + tonedata[2] + ',' + tonedata[3];
+
+			return tone !== tone2;
+		} else {
+			if ( 'simple' === type ) {
+				/*
+				 * This creates a smiling emoji, and checks to see if there is any image data in the
+				 * center pixel. In browsers that don't support emoji, the character will be rendered
+				 * as an empty square, so the center pixel will be blank.
+				 */
+				context.fillText( stringFromCharCode( 55357, 56835 ), 0, 0 );
+			} else {
+				/*
+				 * To check for Unicode 8 support, let's try rendering the most important advancement
+				 * that the Unicode Consortium have made in years: the burrito.
+				 */
+				context.fillText( stringFromCharCode( 55356, 57135 ), 0, 0 );
+			}
+			return context.getImageData( 16, 16, 1, 1 ).data[0] !== 0;
+		}
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	settings.supports = {
+		simple:    browserSupportsEmoji( 'simple' ),
+		flag:      browserSupportsEmoji( 'flag' ),
+		unicode8:  browserSupportsEmoji( 'unicode8' ),
+		diversity: browserSupportsEmoji( 'diversity' )
+	};
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.simple || ! settings.supports.flag || ! settings.supports.unicode8 || ! settings.supports.diversity ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );</script> <link rel='stylesheet' id='la-icon-maneger-style-css'  href='http://www.thehardtackle.com/wp-content/uploads/la_icon_sets/style.min.css?ver=4.4.25' type='text/css' media='all' /><link rel='stylesheet' id='catalyst_enqueued_google_fonts-css' href="https://fonts.googleapis.com/css?family=Droid+Sans%3Aregular%2Cbold%7C&#038;ver=4.4.25" type='text/css' media='all' /> <!-- This site uses the Google Analytics by Yoast plugin v5.4.7 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ --> <script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-15071340-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('set', 'dimension1', 'user-254');
+	__gaTracker('set', 'dimension2', 'news');
+	__gaTracker('set', 'dimension3', '2021-07-20T17:25:56+00:00');
+	__gaTracker('set', 'dimension4', 'chelsea,chelsea-social,english-premier-league,liverpool,liverpool-social,news,news-reports,transfers');
+	__gaTracker('send','pageview');</script> <!-- / Google Analytics by Yoast --> <script type='text/javascript' src='http://www.thehardtackle.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script> <script type='text/javascript'>/* <![CDATA[ */
+var SF_Opts = {"social":{"facebook":"https:\/\/www.facebook.com\/thehardtackle","twitter":"https:\/\/twitter.com\/thehardtackle","instagram":"https:\/\/instagram.com\/thehardtackle\/"},"search":"show","blur":"","fade":"no","test_mode":"","hide_def":"","mob_nav":"","sidebar_style":"side","sidebar_behaviour":"slide","alt_menu":"","sidebar_pos":"left","width_panel_1":"275","width_panel_2":"250","width_panel_3":"250","width_panel_4":"200","base_color":"#212121","opening_type":"hover","sub_type":"yes","sub_opening_type":"hover","label":"metro","label_top":"0px","label_size":"53px","label_vis":"visible","item_padding":"15","bg":"","path":"http:\/\/www.thehardtackle.com\/wp-content\/plugins\/superfly-menu-1\/img\/","menu":"{\"7270\":{\"term_id\":7270,\"name\":\"Main Menu\",\"loc\":{\"pages\":{\"2\":1,\"38\":1,\"28581\":1,\"32980\":1,\"34090\":1,\"35634\":1,\"36088\":1,\"42478\":1,\"59181\":1,\"75083\":1,\"112589\":1,\"118038\":1,\"197014\":1,\"197071\":1,\"255536\":1,\"276207\":1},\"cposts\":{\"news\":1,\"blogs\":1,\"multi-media\":1,\"india\":1,\"round-up\":1},\"cats\":{\"1\":1,\"3\":1,\"4\":1,\"6\":1,\"7\":1,\"8\":1,\"9\":1,\"11\":1,\"12\":1,\"13\":1,\"14\":1,\"17\":1,\"18\":1,\"82\":1,\"106\":1,\"109\":1,\"205\":1,\"216\":1,\"217\":1,\"242\":1,\"284\":1,\"335\":1,\"398\":1,\"444\":1,\"494\":1,\"531\":1,\"541\":1,\"555\":1,\"556\":1,\"943\":1,\"1370\":1,\"1509\":1,\"1600\":1,\"1714\":1,\"1725\":1,\"3949\":1,\"3989\":1,\"5188\":1,\"6348\":1,\"6790\":1,\"7180\":1,\"7271\":1,\"7272\":1,\"7273\":1,\"7301\":1,\"7615\":1,\"7700\":1,\"8019\":1,\"8034\":1,\"8150\":1,\"8411\":1,\"8736\":1,\"9174\":1,\"9178\":1,\"9246\":1,\"9310\":1,\"9424\":1,\"9458\":1,\"9459\":1,\"9464\":1,\"9465\":1,\"9466\":1,\"9467\":1,\"9468\":1,\"9469\":1,\"9470\":1,\"9471\":1,\"9472\":1,\"9473\":1,\"9474\":1,\"9475\":1,\"9476\":1,\"9477\":1,\"9710\":1,\"9805\":1,\"9807\":1,\"9812\":1,\"9814\":1,\"9913\":1,\"9931\":1,\"9932\":1,\"9933\":1,\"9934\":1,\"9935\":1,\"10521\":1,\"10671\":1},\"taxes\":{},\"langs\":{},\"wp_pages\":{\"front\":1,\"home\":1,\"archive\":1,\"single\":1,\"forbidden\":1,\"search\":1},\"ids\":[\"\"]},\"isDef\":true}}","togglers":"","subMenuSupport":"yes","subMenuSelector":"sub-menu, children","activeClassSelector":"current-menu-item","allowedTags":"DIV, NAV, UL, OL, LI, A, P, H1, H2, H3, H4, SPAN","menuData":[],"siteBase":"http:\/\/www.thehardtackle.com","plugin_ver":"4.1.1"};
+/* ]]> */</script> <link rel="pingback" href="http://www.thehardtackle.com/xmlrpc.php" /><link rel='https://api.w.org/' href='http://www.thehardtackle.com/wp-json/' /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.thehardtackle.com/xmlrpc.php?rsd" /><link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thehardtackle.com/wp-includes/wlwmanifest.xml" /><link rel='prev' title='Transfer News: Manchester United lead Liverpool in Saul Niguez pursuit' href='http://www.thehardtackle.com/news/2021/07/20/transfer-news-manchester-united-lead-liverpool-in-saul-niguez-pursuit/' /><link rel='next' title='Transfer News: Tottenham in advanced talks to sign Cristian Romero' href='http://www.thehardtackle.com/news/2021/07/20/transfer-news-tottenham-in-advanced-talks-to-sign-cristian-romero/' /><link rel="alternate" type="application/json+oembed" href="http://www.thehardtackle.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thehardtackle.com%2Fnews%2F2021%2F07%2F20%2Ftransfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop%2F" /><link rel="alternate" type="text/xml+oembed" href="http://www.thehardtackle.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thehardtackle.com%2Fnews%2F2021%2F07%2F20%2Ftransfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop%2F&#038;format=xml" /> <script>var SFM_is_mobile = (function () {
+        var n = navigator.userAgent;
+        var reg = new RegExp('Android\s([0-9\.]*)')
+        var match = n.toLowerCase().match(reg);
+        var android =  match ? parseFloat(match[1]) : false;
+        if (android && android < 3.6) return
+
+        return n.match(/Android|BlackBerry|IEMobile|iPhone|iPad|iPod|Opera Mini/i)
+    })();
+
+	var SFM_skew_disabled = (function($){
+		var window_width = $(window).width();
+		var sfm_width = 275;
+		if(sfm_width * 2 >= window_width){
+			return true;
+		}
+		return false;
+	})(jQuery);
+
+    (function(){
+        var mob_bar = '';
+        var pos = 'left';
+        var iconbar = '';
+        var classes = SFM_is_mobile ? (mob_bar ? 'sfm-mobile sfm-mob-nav' : 'sfm-mobile'): 'sfm-no-mobile';
+        classes += ' sfm-pos-' + pos;
+        classes += iconbar ? ' sfm-bar' : '';
+		classes += SFM_skew_disabled ? ' sfm-skew-disabled' : '';
+        document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className + ' ' + classes;
+    })()</script> <script>(function (){
+        var insertListener = function(event){
+            if (event.animationName == "bodyArrived") {
+                afterContentArrived();
+            }
+        }
+        var timer, _timer;
+        var transition = '';
+
+        if (document.addEventListener && false) {
+            document.addEventListener("animationstart", insertListener, false); // standard + firefox
+            document.addEventListener("MSAnimationStart", insertListener, false); // IE
+            document.addEventListener("webkitAnimationStart", insertListener, false); // Chrome + Safari
+        } else {
+            timer = setInterval(function(){
+                if (document.body) { //
+                    clearInterval(timer);
+                    afterContentArrived();
+                }
+            },14);
+        }
+
+        function afterContentArrived() {
+            clearTimeout(_timer);
+
+            if (window.jQuery) {
+                jQuery('body').fadeIn();
+                jQuery(document).trigger('sfm_doc_body_arrived');
+                window.SFM_EVENT_DISPATCHED = true;
+            } else {
+                _timer = setTimeout(function(){
+                    afterContentArrived();
+                },14);
+            }
+        }
+    })()</script> <script type='text/javascript'>var SFM_template ="<div class=\"\n        sfm-rollback\n        sfm-color1\n        sfm-theme-        sfm-label-visible        sfm-label-metro                        \"\n        style=\"\">\n    <div class='sfm-navicon-button x sf_label_default '><div class=\"sfm-navicon\"><\/div>    <\/div>\n<\/div>\n<div id=\"sfm-sidebar\" style=\"opacity:0\" class=\"sfm-theme- sfm-hl-semi sfm-indicators\">\n    <div class=\"sfm-scroll-wrapper\">\n        <div class=\"sfm-scroll\">\n            <div class=\"sfm-sidebar-close\"><\/div>\n            <div class=\"sfm-logo\">\n                                                                        <a href=\"http:\/\/www.thehardtackle.com\">\n                        <img src=\"http:\/\/www.thehardtackle.com\/wp-content\/uploads\/2016\/01\/THT.png\" alt=\"\">\n                    <\/a>\n                                                <div class=\"sfm-title\"><\/div>\n            <\/div>\n                        <nav class=\"sfm-nav\">\n                <div class=\"sfm-va-middle\">\n                    <ul id=\"sfm-nav\" class=\"menu\"><li id=\"menu-item-82822\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-82822\"><a href=\"http:\/\/thehardtackle.com\">Home<\/a><\/li>\n<li id=\"menu-item-124300\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124300\"><a href=\"http:\/\/www.thehardtackle.com\/category\/match-centre\/\">Match Center<\/a><\/li>\n<li id=\"menu-item-82806\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-news-ancestor current-menu-parent current-news-parent menu-item-82806\"><a href=\"http:\/\/www.thehardtackle.com\/category\/news\/transfers\/\">Transfer News<\/a><\/li>\n<li id=\"menu-item-82826\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82826\"><a href=\"http:\/\/www.thehardtackle.com\/category\/features\/\">Featured<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-124324\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-124324\"><a href=\"http:\/\/www.thehardtackle.com\/category\/columns\/\">Columns<\/a>\n\t<ul class=\"sub-menu\">\n\t\t<li id=\"menu-item-124680\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124680\"><a href=\"http:\/\/www.thehardtackle.com\/category\/columns\/classic-clashes\/\">Classic Clashes<\/a><\/li>\n\t\t<li id=\"menu-item-124353\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124353\"><a href=\"http:\/\/www.thehardtackle.com\/category\/editors-pick\/\">Editor&#8217;s Pick<\/a><\/li>\n\t\t<li id=\"menu-item-124338\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124338\"><a href=\"http:\/\/www.thehardtackle.com\/category\/features\/extra-time\/footballistic\/\">Footballistic!<\/a><\/li>\n\t\t<li id=\"menu-item-124677\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124677\"><a href=\"http:\/\/www.thehardtackle.com\/category\/columns\/relic\/\">Relic &#8211; Football History<\/a><\/li>\n\t\t<li id=\"menu-item-124339\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124339\"><a href=\"http:\/\/www.thehardtackle.com\/category\/features\/extra-time\/rewind\/\">Rewind &#8211; Classic Videos<\/a><\/li>\n\t\t<li id=\"menu-item-124681\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124681\"><a href=\"http:\/\/www.thehardtackle.com\/category\/columns\/the-talking-game\/\">Talking Game &#8211; Exclusive Interviews<\/a><\/li>\n\t\t<li id=\"menu-item-82818\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82818\"><a href=\"http:\/\/www.thehardtackle.com\/category\/if\/\">Indian Football<\/a>\n\t\t<ul class=\"sub-menu\">\n\t\t\t<li id=\"menu-item-124350\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124350\"><a href=\"http:\/\/thehardtackle.com\/tag\/aiff\">AIFF<\/a><\/li>\n\t\t\t<li id=\"menu-item-124348\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124348\"><a href=\"http:\/\/thehardtackle.com\/tag\/i-league\">I league<\/a><\/li>\n\t\t\t<li id=\"menu-item-124346\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124346\"><a href=\"http:\/\/www.thehardtackle.com\/2011\/legends-of-indian-football-series\/\">Legends Of Indian Football<\/a><\/li>\n\t\t<\/ul>\n<\/li>\n\t\t<li id=\"menu-item-124682\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124682\"><a href=\"http:\/\/www.thehardtackle.com\/category\/columns\/whiteboard\/\">Whiteboard &#8211; Football Tactics<\/a><\/li>\n\t<\/ul>\n<\/li>\n\t<li id=\"menu-item-124352\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-124352\"><a href=\"http:\/\/www.thehardtackle.com\/category\/around-the-world\/\">Around the World<\/a>\n\t<ul class=\"sub-menu\">\n\t\t<li id=\"menu-item-124323\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-124323\"><a href=\"http:\/\/www.thehardtackle.com\/category\/uefa\/\">UEFA<\/a>\n\t\t<ul class=\"sub-menu\">\n\t\t\t<li id=\"menu-item-124320\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124320\"><a href=\"http:\/\/www.thehardtackle.com\/category\/uefa\/champions-league\/\">Champions&#8217; League<\/a><\/li>\n\t\t\t<li id=\"menu-item-124321\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124321\"><a href=\"http:\/\/www.thehardtackle.com\/category\/uefa\/europa-league-uefa\/\">Europa League<\/a><\/li>\n\t\t<\/ul>\n<\/li>\n\t\t<li id=\"menu-item-82810\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82810\"><a href=\"http:\/\/www.thehardtackle.com\/category\/internationals\/\">Internationals<\/a>\n\t\t<ul class=\"sub-menu\">\n\t\t\t<li id=\"menu-item-270989\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-270989\"><a href=\"http:\/\/www.thehardtackle.com\/category\/internationals\/euro-2016\/\">Euro 2016<\/a><\/li>\n\t\t\t<li id=\"menu-item-82809\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82809\"><a href=\"http:\/\/www.thehardtackle.com\/category\/euro-2012\/\">Euro 2012<\/a><\/li>\n\t\t\t<li id=\"menu-item-82808\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82808\"><a href=\"http:\/\/www.thehardtackle.com\/category\/internationals\/copa-america-2011\/\">Copa America 2011<\/a><\/li>\n\t\t\t<li id=\"menu-item-82807\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82807\"><a href=\"http:\/\/www.thehardtackle.com\/category\/afcon\/\">AFCON<\/a><\/li>\n\t\t\t<li id=\"menu-item-82812\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82812\"><a href=\"http:\/\/www.thehardtackle.com\/category\/olympics\/\">Olympics<\/a><\/li>\n\t\t<\/ul>\n<\/li>\n\t<\/ul>\n<\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-149225\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-149225\"><a href=\"http:\/\/www.thehardtackle.com\/category\/if\/indian-super-league\/\">ISL<\/a><\/li>\n<li id=\"menu-item-82791\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-news-ancestor current-menu-parent current-news-parent menu-item-has-children menu-item-82791\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/\">Premier League<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-124302\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124302\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/arsenal\/\">Arsenal<\/a><\/li>\n\t<li id=\"menu-item-124301\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-news-ancestor current-menu-parent current-news-parent menu-item-124301\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/chelsea\/\">Chelsea<\/a><\/li>\n\t<li id=\"menu-item-124304\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category current-news-ancestor current-menu-parent current-news-parent menu-item-124304\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/liverpool\/\">Liverpool<\/a><\/li>\n\t<li id=\"menu-item-124305\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124305\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/manchester-city\/\">Manchester City<\/a><\/li>\n\t<li id=\"menu-item-124306\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124306\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/manchester-united\/\">Manchester United<\/a><\/li>\n\t<li id=\"menu-item-124307\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124307\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/tottenham-hotspur\/\">Tottenham Hotspur<\/a><\/li>\n\t<li id=\"menu-item-124303\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124303\"><a href=\"http:\/\/www.thehardtackle.com\/category\/english-premier-league\/championship\/\">Championship<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-82795\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82795\"><a href=\"http:\/\/www.thehardtackle.com\/category\/serie-a-2\/\">Serie A<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-124315\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124315\"><a href=\"http:\/\/www.thehardtackle.com\/category\/serie-a-2\/ac-milan\/\">AC Milan<\/a><\/li>\n\t<li id=\"menu-item-124327\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124327\"><a href=\"http:\/\/www.thehardtackle.com\/tag\/roma\/\">AS Roma<\/a><\/li>\n\t<li id=\"menu-item-124326\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124326\"><a href=\"http:\/\/www.thehardtackle.com\/tag\/fiorentina\/\">Fiorentina<\/a><\/li>\n\t<li id=\"menu-item-124316\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124316\"><a href=\"http:\/\/www.thehardtackle.com\/category\/serie-a-2\/inter-milan\/\">Inter Milan<\/a><\/li>\n\t<li id=\"menu-item-124317\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124317\"><a href=\"http:\/\/www.thehardtackle.com\/category\/serie-a-2\/juventus\/\">Juventus<\/a><\/li>\n\t<li id=\"menu-item-124325\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124325\"><a href=\"http:\/\/www.thehardtackle.com\/tag\/napoli\/\">Napoli<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-82800\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82800\"><a href=\"http:\/\/www.thehardtackle.com\/category\/la-liga-2\/\">La Liga<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-124332\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124332\"><a href=\"http:\/\/www.thehardtackle.com\/tag\/atletico-madrid\/\">Atletico Madrid<\/a><\/li>\n\t<li id=\"menu-item-124535\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124535\"><a href=\"http:\/\/www.thehardtackle.com\/category\/la-liga-2\/barcelona\/\">Barcelona<\/a><\/li>\n\t<li id=\"menu-item-124319\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124319\"><a href=\"http:\/\/www.thehardtackle.com\/category\/la-liga-2\/real-madrid\/\">Real Madrid<\/a><\/li>\n\t<li id=\"menu-item-124330\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124330\"><a href=\"http:\/\/thehardtackle.com\/tag\/villarreal\">Villareal<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-82819\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82819\"><a href=\"http:\/\/www.thehardtackle.com\/category\/germany\/\">Bundesliga<\/a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-124313\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124313\"><a href=\"http:\/\/www.thehardtackle.com\/category\/germany\/bayern-munich\/\">Bayern Munich<\/a><\/li>\n\t<li id=\"menu-item-124314\" class=\"menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124314\"><a href=\"http:\/\/www.thehardtackle.com\/category\/germany\/borussia-dortmund\/\">Borussia Dortmund<\/a><\/li>\n\t<li id=\"menu-item-124328\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-124328\"><a href=\"http:\/\/www.thehardtackle.com\/tag\/schalke-04\/\">Schalke-04<\/a><\/li>\n<\/ul>\n<\/li>\n<li id=\"menu-item-242777\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-242777\"><a href=\"http:\/\/www.thehardtackle.com\/contactus\/\">Contact Us<\/a><\/li>\n<\/ul>                    <div class=\"widget-area\"><\/div>\n                <\/div>\n            <\/nav>\n            <ul class=\"sfm-social\"><\/ul>\n                    <\/div>\n    <\/div>\n    <div class=\"sfm-sidebar-bg\"><\/div>\n    <div class=\"sfm-view sfm-view-level-custom\">\n        <span class=\"sfm-close\"><\/span>\n            <\/div>\n<\/div>\n<div id=\"sfm-overlay-wrapper\"><div id=\"sfm-overlay\"><\/div><\/div>"</script><link rel="canonical" href="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/" /> <!-- wpsso meta tags begin --><meta name="wpsso:mark:begin" content="wpsso meta tags begin"/> <!-- generator:1 --><meta name="generator" content="WPSSO Core 4.18.0/L"/> <!-- generator:2 --><meta name="generator" content="WPSSO UM 1.14.0/F"/><link rel="publisher" href="https://plus.google.com/+Thehardtackle/"/><link rel="shortlink" href="http://www.thehardtackle.com/?p=484363"/><meta property="fb:app_id" content="129716060435434"/><meta property="og:type" content="article"/><meta property="og:url" content="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/"/><meta property="og:locale" content="en_US"/><meta property="og:site_name" content="Thehardtackle.com"/><meta property="og:title" content="Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop"/><meta property="og:description" content="Liverpool and Leeds United are among the clubs monitoring the situation of Chelsea whizkid Lewis Bate, whose contract expires next year. #ChelseaFC #LeedsUnited #LewisBate"/><meta property="og:updated_time" content="2021-07-20T12:17:09+00:00"/> <!-- og:image:1 --><meta property="og:image" content="http://www.thehardtackle.com/wp-content/uploads/2018/11/GettyImages-519631356-600x315.jpg"/> <!-- og:image:1 --><meta property="og:image:width" content="600"/> <!-- og:image:1 --><meta property="og:image:height" content="315"/> <!-- article:author:1 --><meta property="article:author" content="https://www.facebook.com/the21stpilot"/><meta property="article:publisher" content="https://www.facebook.com/thehardtackle/"/><meta property="article:published_time" content="2021-07-20T11:55:56+00:00"/><meta property="article:modified_time" content="2021-07-20T12:17:09+00:00"/><meta property="article:section" content="Soccer"/> <!-- article:tag:1 --><meta property="article:tag" content="Chelsea FC"/> <!-- article:tag:2 --><meta property="article:tag" content="Leeds United"/> <!-- article:tag:3 --><meta property="article:tag" content="Lewis Bate"/> <!-- article:tag:4 --><meta property="article:tag" content="Liverpool FC"/><meta name="weibo:article:create_at" content="2021-07-20 11:55:56"/><meta name="weibo:article:update_at" content="2021-07-20 12:17:09"/><meta name="twitter:domain" content="www.thehardtackle.com"/><meta name="twitter:site" content="@thehardtackle"/><meta name="twitter:title" content="Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop"/><meta name="twitter:description" content="Liverpool and Leeds United are among the clubs monitoring the situation of Chelsea whizkid Lewis Bate, whose contract expires next year. #ChelseaFC #LeedsUnited #LewisBate"/><meta name="twitter:creator" content="@covershadow09"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:image" content="http://www.thehardtackle.com/wp-content/uploads/2018/11/GettyImages-519631356-600x400.jpg"/><link itemprop="url" href="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/"/><meta itemprop="name" content="Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop"/><meta itemprop="description" content="Liverpool and Leeds United are among the clubs monitoring the situation of Chelsea whizkid Lewis Bate, whose contract expires next year."/><meta name="author" content="Anas Ali"/><meta name="description" content="Liverpool and Leeds United are among the clubs monitoring the situation of Chelsea whizkid Lewis Bate, whose contract expires next year."/><meta name="robots" content="index, follow"/> <noscript itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="url" href="http://www.thehardtackle.com/wp-content/uploads/2018/11/GettyImages-519631356-800x534.jpg"/><meta itemprop="width" content="800"/><meta itemprop="height" content="534"/> </noscript><meta name="wpsso:mark:end" content="wpsso meta tags end"/> <!-- wpsso meta tags end --> <!-- added on 2021-07-20T16:57:05+00:00 in 0.003381 secs from http://www.thehardtackle.com --> <!--[if lt IE 9]> <script src="http://www.thehardtackle.com/wp-content/themes/catalyst/lib/js/html5.js" type="text/javascript"></script> <![endif]--> <!-- Begin Catalyst Header Scripts --><meta name="msvalidate.01" content="97A802A6481AD43CCB0217212E2C16C1" /><meta name="alexaVerifyID" content="PYBfx6d98rs5CfLRgGN3TEELypE" /> <script type='text/javascript'>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();</script> <script type='text/javascript'>googletag.cmd.push(function() {
+var mappingheaderad1 = googletag.sizeMapping().
+	addSize([992, 0],[[728, 280], [728, 90],[1, 1]]). //desktop
+	addSize([768, 0],[[728, 280], [728, 90],[1, 1]]). //tablet
+	addSize([320, 0],[[320, 50], [320, 100], [320, 200], [300, 250], [1, 1]]). //mobile
+	addSize([0, 0],[[300, 250], [1, 1]]). //other
+	build();
+
+    
+var mappingsidebarad2 = googletag.sizeMapping().
+	addSize([1024, 768], [[300, 250], [300, 600],[1, 1]]).
+	addSize([992, 0],[[300, 250], [300, 600],[1, 1]]). //desktop
+	addSize([768, 0],[[1, 1]]). //tablet
+	addSize([320, 0],[[1, 1]]). //mobile
+	addSize([0, 0],[[1, 1]]). //other
+	build();
+	
+	var mappingslot8ad = googletag.sizeMapping().
+	addSize([1024, 768], [[1, 1]]).
+	addSize([992, 0],[[1, 1]]). //desktop
+	addSize([768, 0],[[1, 1]]). //tablet
+	addSize([320, 0],[[300, 250], [300, 600]]). //mobile
+	addSize([0, 0],[[300, 250], [1, 1]]). //other
+	build();
+	
+	googletag.defineSlot('/28296739/Mobile_300_Adsense', [[300, 50], [300, 100], [320, 50], [300, 250], [300, 75], [320, 480]], 'div-gpt-ad-1482917818290-0').defineSizeMapping(mappingslot8ad).addService(googletag.pubads());
+
+	googletag.defineSlot('/28296739/Sidebar_Slot_2', [[300, 250], [300, 600]], 'div-gpt-ad-1482861325246-0').defineSizeMapping(mappingsidebarad2).addService(googletag.pubads());
+
+	googletag.defineSlot('/28296739/Head', [[300, 100], [300, 250], [300, 75], [728, 90], [320, 50], [300, 50], [970, 90]], 'div-gpt-ad-1482673885218-0').defineSizeMapping(mappingheaderad1).addService(googletag.pubads());
+
+googletag.pubads().enableSingleRequest();
+    googletag.enableServices(); 
+});</script> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>(adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6441130170451142",
+    enable_page_level_ads: true
+  });</script> <script type="text/javascript" src="//services.vlitag.com/adv1/?q=63ac27995f329a23a893db833162c960" defer="" async=""></script><script>var vitag = vitag || {};</script> <!-- End Valueimpression Head Script --> <!-- End Catalyst Header Scripts --></head><body class="single single-news postid-484363 mac firefox ff8 custom-layout no-sidebar responsive"><div id="wrap" class="clearfix"><div id="header-wrap"><header id="header" role="banner"><div id="header-left"><p id="title"><a href="http://www.thehardtackle.com/" title="TheHardTackle.com">TheHardTackle.com</a></p><p id="tagline"></p></div><div id="header-right"></div></header></div><div id="container-wrap"><div id="container"><div id="content-sidebar-wrap"><div id="content-wrap"><div id="content" class="hfeed" role="main"><div class="breadcrumbs">You are here: <a href="http://www.thehardtackle.com/" title="View Home">Home</a> » <a href="http://www.thehardtackle.com/news/" title="View all news">news</a> » Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop</div><article class="post-484363 news type-news status-publish has-post-thumbnail hentry category-chelsea category-chelsea-social category-english-premier-league category-liverpool category-liverpool-social category-news category-news-reports category-transfers tag-chelsea-fc tag-leeds-united tag-lewis-bate tag-liverpool"><header class="entry-header"><div class="featured_image_wrapper" style="background-image:url('https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2018/11/GettyImages-519631356-1024x683.jpg');"><div class="featured_image_overlay"></div><div class="featured_title_wrapper"><h1 class="entry-title featured_title" style="">Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop</h1></div></div><div class="byline-meta">By <span class="author vcard"><span class="fn"><a href="http://www.thehardtackle.com/author/anasmolla15/" rel="author">Anas Ali</a></span></span> on <time class="date time published" title="2021-07-20T17:25:56+0530">July 20, 2021 5:25 pm</time> <span class="post-comments"> | <a href="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/#respond">Leave a Comment</a></span></div></header><aside id="text-73" class="widget widget_text catalyst-widget-area Left_Column"><div class="widget-wrap"><div class="textwidget"><div style="width:300px;margin:0;padding:0;border:1px solid #ccc;background:#555;color:#fff;font-size:11px;line-height:14px;font-family:Verdana,Arial,Helvetica,Sans-serif;font-weight:bold;"
+><div style="margin:0;padding:0;border:1px solid #fff;background:#555;"
+><div style="margin:0;padding:0;border:0;width:160px;height:50px;float:left;"
+><a href="http://www.newsnow.co.uk/h/Sport/Football" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://www.newsnow.co.uk/h/Sport/Football', '');" target="newsnow"
+title="Click here for more Football news from NewsNow"
+style="border:0;text-decoration:none;" rel="nofollow"><noscript><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2013/09/newsnow_f_ab.gif"
+alt="As featured on NewsNow: Football news" style="display:block;margin:0;padding:0;border:0;width:160px;height:50px;"
+/></noscript><img class="lazyload" src='https://cdn.shortpixel.ai/client/q_lqip,ret_wait/http://www.thehardtackle.com/wp-content/uploads/2013/09/newsnow_f_ab.gif' data-src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2013/09/newsnow_f_ab.gif"
+alt="As featured on NewsNow: Football news" style="display:block;margin:0;padding:0;border:0;width:160px;height:50px;"
+/></a></div><div style="padding:0;border:0;margin:0 0 0 160px;text-align:center;"
+><span style="margin:0;padding:0;border:0;display:inline-block;vertical-align:middle;text-align:center;width:120px;"
+><a href="http://www.newsnow.co.uk/h/Sport/Football" target="newsnow"
+title="Click here for more Football news from NewsNow" style="border:0;color:#fff;text-decoration:none;" rel="nofollow"></a
+><a href="http://www.newsnow.co.uk/h/Sport/Football" target="newsnow"
+title="Click here for more Football news from NewsNow" style="border:0;color:#fff;text-decoration:none;" rel="nofollow">Football News</a
+><a href="http://www.newsnow.co.uk/h/Sport/Football" target="newsnow"
+title="Click here for more Football news from NewsNow" style="border:0;color:#fff;text-decoration:none;" rel="nofollow"> 24/7</a
+></span><span style="margin:0;padding:0;border:0;display:inline-block;height:50px;width:1px;vertical-align:middle;line-height:50px;font-size:1px;"
+>&nbsp;</span></div></div></div></div></div></aside><aside id="text-76" class="widget widget_text catalyst-widget-area Left_Column"><div class="widget-wrap"><div class="textwidget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- Top_Right_300X600 --> <ins class="adsbygoogle"
+ style="display:inline-block;width:300px;height:600px"
+ data-ad-client="ca-pub-6441130170451142"
+ data-ad-slot="5370451586"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></aside><aside id="text-14" class="widget widget_text catalyst-widget-area Left_Column"><div class="widget-wrap"><h4 class="widgettitle">Latest Opinions</h4><div class="textwidget"><div id="basic-container"><article class="basic-layout lptw-columns-fixed layout-dark" style="width: 300px; padding-bottom: 10px; "><header> <a class="overlay overlay-dark lptw-post-thumbnail-link" href="http://www.thehardtackle.com/opinion/arsenal-barcelona-or-real-madrid-which-club-should-dani-olmo-join-this-summer-tht-opinions" target="_blank"><span class="fluid-image-wrapper"><noscript><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2019/11/GettyImages-1187890670-300x206.jpg" alt="Arsenal, Barcelona or Real Madrid &#8211; Which club should Dani Olmo join this summer? | THT Opinions" class="fluid" /></noscript><img src='https://cdn.shortpixel.ai/client/q_lqip,ret_wait/http://www.thehardtackle.com/wp-content/uploads/2019/11/GettyImages-1187890670-300x206.jpg' data-src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2019/11/GettyImages-1187890670-300x206.jpg" alt="Arsenal, Barcelona or Real Madrid &#8211; Which club should Dani Olmo join this summer? | THT Opinions" class="lazyload fluid" /></span> </a><div class="lptw-post-header"><a class="lptw-post-title title-dark" href="http://www.thehardtackle.com/opinion/arsenal-barcelona-or-real-madrid-which-club-should-dani-olmo-join-this-summer-tht-opinions" target="_blank">Arsenal, Barcelona or Real Madrid &#8211; Which club should Dani Olmo join this summer? | THT Opinions</a></div></header></article><article class="basic-layout lptw-columns-fixed layout-dark" style="width: 300px; padding-bottom: 10px; "><header> <a class="overlay overlay-dark lptw-post-thumbnail-link" href="http://www.thehardtackle.com/opinion/three-potential-destinations-for-kurt-zouma-as-chelsea-prepare-sale-tht-opinions" target="_blank"><span class="fluid-image-wrapper"><noscript><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2019/10/GettyImages-1182931926-300x200.jpg" alt="Three Potential Destinations for Kurt Zouma as Chelsea prepare sale | THT Opinions" class="fluid" /></noscript><img src='https://cdn.shortpixel.ai/client/q_lqip,ret_wait/http://www.thehardtackle.com/wp-content/uploads/2019/10/GettyImages-1182931926-300x200.jpg' data-src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/http://www.thehardtackle.com/wp-content/uploads/2019/10/GettyImages-1182931926-300x200.jpg" alt="Three Potential Destinations for Kurt Zouma as Chelsea prepare sale | THT Opinions" class="lazyload fluid" /></span> </a><div class="lptw-post-header"><a class="lptw-post-title title-dark" href="http://www.thehardtackle.com/opinion/three-potential-destinations-for-kurt-zouma-as-chelsea-prepare-sale-tht-opinions" target="_blank">Three Potential Destinations for Kurt Zouma as Chelsea prepare sale | THT Opinions</a></div></header></article></div></div></div></aside><aside id="text-83" class="widget widget_text catalyst-widget-area Left_Column"><div class="widget-wrap"><div class="textwidget"><div class="adsbyvli" data-ad-slot="vi_1262248802"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1262248802")})</script> <!-- thehardtackle.com_160x600 End --></div></div></aside><div class="entry-content"><p><!--Article Start--></p><h3 style="text-align: justify;">Liverpool and Leeds United are among the clubs monitoring the situation of Chelsea whizkid Lewis Bate, whose contract expires next year.</h3><p style="text-align: justify;">According to a report from <a href="https://www.dailymail.co.uk/sport/football/article-9802553/Chelsea-teenager-Lewis-Bate-facing-uncertain-future-delays-signing-new-contract.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.dailymail.co.uk/sport/football/article-9802553/Chelsea-teenager-Lewis-Bate-facing-uncertain-future-delays-signing-new-contract.html', 'Daily Mail');" class="editor-rtfLink"  target="_blank">Daily Mail</a>, Lewis Bate has emerged as a hot topic in the English market. The Chelsea youngster is facing an uncertain future at Stamford Bridge, with his current contract expiring at the end of next season. It has put a number of Premier League clubs on red alert, including Liverpool and Leeds United.</p><div class="insert-post-ads"><div style="padding-bottom: 10px;"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- Para 2 --> <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-6441130170451142"
+ data-ad-slot="8064735983"
+ data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div></div><p style="text-align: justify;">Bate has appeared reluctant to extend his contract in west London, fueling further speculations over a potential exit in the summer. However, the youngster is not a new face at Cobham, having joined Chelsea back in 2011, at the age of just nine.</p><p style="text-align: justify;">The central midfielder has enjoyed swift growth since, gaining his promotion to the Under-18 side in 2019 before being drafted into the reserve team last summer. Bate is yet to make his competitive debut for Chelsea, but he was on the bench twice last season, in Premier League matches against Sheffield United and Burnley.</p><div class="insert-post-ads"><ins data-fluid-zoneid="16056" data-fluid-id="e6404a5432b1988ea2e71ec092e8608a"></ins><script src="//fluid.4strokemedia.com/www/fluid/player.php" async=""></script></div><p style="text-align: justify;">However, it appears the 18-year-old whizkid is unsure about his prospects at Stamford Bridge. Jorginho and N&#8217;Golo Kante have both become indispensable figures in the club&#8217;s first-team, with Thomas Tuchel further interested in shoring up his ranks by <a class="editor-rtfLink" href="http://www.thehardtackle.com/news/2021/07/19/transfer-news-chelsea-liverpool-submit-offers-to-saul-niguez/" target="_blank">setting his sights on Atletico Madrid superstar Saul Niguez</a>, who is also a target for Liverpool.</p><p style="text-align: justify;">It has put Liverpool on alert, as they hope to bolster their youth options after suffering a mass exodus among its youth players in recent years. One of such players is Ethan Ennis, who is <a class="editor-rtfLink" href="http://www.thehardtackle.com/news/2021/07/18/transfer-news-manchester-united-set-to-beat-chelsea-to-liverpool-midfielder-ethan-ennis/" target="_blank">tipped to join Manchester United</a> even though Chelsea were involved in the chase.</p><div class="insert-post-ads"><div class= "responsive_wrapper"><div class= "responsive_inner"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle"
+ style="display:block; text-align:center;"
+ data-ad-layout="in-article"
+ data-ad-format="fluid"
+ data-ad-client="ca-pub-6441130170451142"
+ data-ad-slot="1889316929"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div><p style="text-align: justify;">Liverpool are trying to fix that problem by bringing in young players, with <a class="editor-rtfLink" href="http://www.thehardtackle.com/news/2021/07/17/transfer-news-kaio-jorge-on-liverpool-radar/" target="_blank">Kaio Jorge of Santos emerging as a potential target</a>. Lewis Bate should be another excellent option, especially at a time when Jurgen Klopp is desperate to add more depth in the midfield department this summer.</p><p style="text-align: justify;">Leeds United might not be a bad option either, though, having had a lot of success in nurturing young talents in recent years. The Whites have a strong and healthy youth department as well, notably bringing in Sean McGurk and Amari Miller this summer.</p><div class="insert-post-ads"><div style="padding-bottom: 10px;"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- Responsive_Paragraph_7 --> <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-client="ca-pub-6441130170451142"
+ data-ad-slot="3442733187"
+ data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div></div><p style="text-align: justify;">At the end of the day, Lewis Bate&#8217;s future is in his own hands. He can opt to remain another season at Stamford Bridge in an attempt to impress Tuchel. But ideally, the Chelsea whizkid may prefer to move on and join a club like Leeds United ahead of Liverpool as they can give him the platform to shine at the highest level of football next season.</p><p><!--Article End--></p><div style="clear:both;"></div> <!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"> <rdf:Description rdf:about="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/"
+ dc:identifier="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/"
+ dc:title="Transfer News: Liverpool, Leeds United eyeing Lewis Bate swoop"
+ trackback:ping="http://www.thehardtackle.com/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/trackback/" /> </rdf:RDF>--></div><aside id="text-82" class="widget widget_text catalyst-widget-area revcontent"><div class="widget-wrap"><div class="textwidget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <ins class="adsbygoogle"
+ style="display:block"
+ data-ad-format="autorelaxed"
+ data-ad-client="ca-pub-6441130170451142"
+ data-ad-slot="1687627635"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></aside><footer class="post-meta"><p><span class="tags"> <a href="http://www.thehardtackle.com/tag/chelsea-fc/" rel="tag">Chelsea FC</a> <a href="http://www.thehardtackle.com/tag/leeds-united/" rel="tag">Leeds United</a> <a href="http://www.thehardtackle.com/tag/lewis-bate/" rel="tag">Lewis Bate</a> <a href="http://www.thehardtackle.com/tag/liverpool/" rel="tag">Liverpool FC</a></span></p></footer><aside id="text-63" class="widget widget_text catalyst-widget-area Left_Column"><div class="widget-wrap"><div class="textwidget"><div class ="nearcomment"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- Medium Square Middle --> <ins class="adsbygoogle"
+ style="display:inline-block;width:300px;height:250px"
+ data-ad-client="ca-pub-6441130170451142"
+ data-ad-slot="7919298387"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></aside></article><div id="comment-wrap"><div id="comments"> <!-- If comments are open, but there are no comments. --></div><div id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title">Leave A Comment... <small><a rel="nofollow" id="cancel-comment-reply-link" href="/news/2021/07/20/transfer-news-liverpool-leeds-united-eyeing-lewis-bate-swoop/?feed=atom&amp;withoutcomments=1#respond" style="display:none;">Cancel reply</a></small></h3><form action="http://www.thehardtackle.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-form-comment"><textarea id="comment" name="comment" cols="80" rows="10" tabindex="4" aria-required="true"></textarea></p><p class="comment-form-author"><input id="author" name="author" type="text" value="" size="22" tabindex="1" aria-required="true" /><label class="comment-body-text" for="author"><small>Name</small></label> <span class="required">*</span></p><p class="comment-form-email"><input id="email" name="email" type="text" value="" size="22" tabindex="2" aria-required="true" /><label class="comment-body-text" for="email"><small>Email</small></label> <span class="required">*</span></p><p class="comment-form-url"><input id="url" name="url" type="text" value="" size="22" tabindex="3" /><label class="comment-body-text" for="url"><small>Website</small></label></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit" /> <input type='hidden' name='comment_post_ID' value='484363' id='comment_post_ID' /> <input type='hidden' name='comment_parent' id='comment_parent' value='0' /></p></form></div><!-- #respond --><div style="clear:both;"></div></div></div><!-- end #content --><div style="clear:both;"></div></div><!-- end #content-wrap --></div><!-- end #content-sidebar-wrap --></div><!-- end #container --><div style="clear:both;"></div></div><!-- end #container-wrap --><div style="clear:both;"></div><div id="footer-wrap"><footer id="footer" class="clearfix" role="contentinfo"><p class="footer-content footer-left"> <span class="footer-text"><a href="http://www.thehardtackle.com/aboutus/">About</a> | <a href="http://www.thehardtackle.com/contactus/">Contact</a> | <a href="http://www.thehardtackle.com/links/">Things We Like</a> | <a href="https://www.facebook.com/thehardtackle">Facebook</a> | <a href ="https://twitter.com/TheHardTackle">Twitter</a> |<a href = "http://www.thehardtackle.com/wp-login.php"> Login</a> | <a href ="http://www.thehardtackle.com/privacy-policy-thehardtackle/"> Privacy Policy</a> </span></p><p class="footer-content footer-right"></p><p class="footer-content footer-center"> <span class="footer-copyright">Copyright &copy; 2021 TheHardTackle.com</span></p></footer></div></div><!-- end #wrap --> <noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script async data-noptimize="1" src='http://www.thehardtackle.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script><script data-noptimize="1">function c_webp(A){var n=new Image;n.onload=function(){var e=0<n.width&&0<n.height;A(e)},n.onerror=function(){A(!1)},n.src='data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA=='}function s_webp(e){window.supportsWebP=e}c_webp(s_webp);document.addEventListener('lazybeforeunveil',function({target:c}){supportsWebP&&['data-src','data-srcset'].forEach(function(a){attr=c.getAttribute(a),null!==attr&&c.setAttribute(a,attr.replace(/\/client\//,'/client/to_webp,'))})});</script> <!-- Begin Catalyst Footer Scripts --> <!-- Quantcast Tag --> <script type="text/javascript">var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-VxUUwFfkxK37_"
+});</script> <noscript><div style="display:none;"> <img src="//pixel.quantserve.com/pixel/p-VxUUwFfkxK37_.gif" border="0" height="1" width="1" alt="Quantcast"/></div> </noscript> <!-- End Quantcast tag --><div id="fb-root"></div> <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=129716060435434";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> <!-- Start Alexa Certify Javascript --> <script type="text/javascript">_atrk_opts = { atrk_acct:"jqHOh1aon8002f", domain:"thehardtackle.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();</script> <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=jqHOh1aon8002f" style="display:none" height="1" width="1" alt="" /></noscript> <!-- End Alexa Certify Javascript --> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> <meta name='dailymotion-domain-verification' content='dmlihuc1x47gush50' /> <!-- End Catalyst Footer Scripts --> <script type="text/javascript" defer src="http://www.thehardtackle.com/wp-content/cache/autoptimize/js/autoptimize_b502585ceeca0ae6b06d1e4e3b64d225.js"></script></body></html>
+<!-- Dynamic page generated in 0.725 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-07-20 22:27:05 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->
