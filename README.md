@@ -10,4 +10,3 @@ Dataset folder must be created in the same directory as crawler.py and empty. si
 2. in main(), choose whether you would like All Google Results or Google News results by passing their respective function into parse_webpage
 
 ## TO-DOs:
-- come up with our own search terms (i.e., replace placeholders and generate the actual articles for the dataset)

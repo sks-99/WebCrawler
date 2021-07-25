@@ -9,7 +9,9 @@ MAX_DOCUMENTS = 20
 # minimum number of words
 WORDS_MINIMUM = 200
 
+# search terms to pull results from
 search_terms = ["Delta", "Air Canada", "WestJet", "Swoop"]
+# page delimiter string
 page_delimiter = "&start={}"
 
 # user agent string
@@ -21,6 +23,7 @@ def word_count(url):
 
     # may crash if website returns error
     try:
+        # add timeout to avoid getting stuck
         page = urllib.request.urlopen(request, timeout=2)
     
         # lxml - html/ xml processor
